@@ -29,7 +29,7 @@ use serde::{Deserialize, Serialize};
 // Montgomery form; i.e., Fr(a) = aR mod r, with R = 2^256.
 #[derive(Clone, Copy, PartialEq, Eq, Hash)]
 #[cfg_attr(feature = "derive_serde", derive(Serialize, Deserialize))]
-pub struct Fr(pub(crate) [u64; 4]);
+pub struct Fr(pub [u64; 4]);
 
 /// Constant representing the modulus
 /// r = 0x30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f0000001
